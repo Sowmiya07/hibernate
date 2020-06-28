@@ -16,6 +16,7 @@ public class HibernateUtil {
         properties.put("hibernate.connection.url", "jdbc:mysql://localhost/TestDB");
         properties.put("hibernate.connection.username", "root");
         properties.put("hibernate.connection.password", "root");
+        properties.put("hibernate.current_session_context_class", "thread");
 
         configuration.setProperties(properties);
 
